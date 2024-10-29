@@ -4,7 +4,7 @@
     .exploreSec {
         display: flex;
         align-items: center;
-        padding: 30px;
+        padding: 20px;
 
         a {
             margin-right: 10px;
@@ -44,7 +44,6 @@
         @include flex;
         max-width: 1200px;
         margin: 0 auto;
-        margin: 170px 0 0;
 
         .exploreLeft {
             width: 720px;
@@ -102,9 +101,6 @@
             }
         }
     }
-
-
-
 }
 
 @media (max-width:768px) {

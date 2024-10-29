@@ -17,7 +17,86 @@ export default function Sea() {
     }
     return (
         <div>
+
             <div className='seaMain'>
+                <div className='seaAttachnment'>
+                    <img src={seaAttachnmentfirst} alt='img' />
+                </div>
+                <div className='seaCard'>
+                    <div className='seaCardMain'>
+                        <div className='seaLeft'>
+                            <div className='seaCardText'>
+                                <div className='cardHead'>
+                                    <h2>Adventures by the sea</h2>
+                                </div>
+                                <div className='cardPara'>
+                                    <p>Witness nature’s most incredible displays with the wind in your hair and the sun kissing your skin. From scenic seas to the open ocean, embrace life on the crystal waters with personalised private charters, whale watching, thrilling watersports and ultimate relaxation with our range of one-of-a-kind moments, available on the azure seas.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className='seaRight'>
+                            <div className='seaSlider'>
+                                <div className="slider-container">
+                                    <Slider {...settings}>
+                                        <div className='seaSliderCard'>
+                                            <div className='seaSliderImg'>
+                                                <img src={seaFirst} alt='img' />
+                                            </div>
+                                            <div className='seaSliderDisc'>
+                                                <div className='seaSliderHead'>
+                                                    <h4>The beauty of Baja</h4>
+                                                </div>
+                                                <div className='seaSliderPara'>
+                                                    <p>Head out for a sunrise surf, cruise the Baja coastline, experience whale watching excursions and dip in the only swimmable beach in Los Cabos, at One&Only Palmilla.</p>
+                                                </div>
+                                                <div className='seaLink'>
+                                                    <a href='#'>explore</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='seaSliderCard'>
+                                            <div className='seaSliderImg'>
+                                                <img src={seaFirst} alt='img' />
+                                            </div>
+                                            <div className='seaSliderDisc'>
+                                                <div className='seaSliderHead'>
+                                                    <h4>The beauty of Baja</h4>
+                                                </div>
+                                                <div className='seaSliderPara'>
+                                                    <p>Head out for a sunrise surf, cruise the Baja coastline, experience whale watching excursions and dip in the only swimmable beach in Los Cabos, at One&Only Palmilla.</p>
+                                                </div>
+                                                <div className='seaLink'>
+                                                    <a href='#'>explore</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='seaSliderCard'>
+                                            <div className='seaSliderImg'>
+                                                <img src={seaFirst} alt='img' />
+                                            </div>
+                                            <div className='seaSliderDisc'>
+                                                <div className='seaSliderHead'>
+                                                    <h4>The beauty of Baja</h4>
+                                                </div>
+                                                <div className='seaSliderPara'>
+                                                    <p>Head out for a sunrise surf, cruise the Baja coastline, experience whale watching excursions and dip in the only swimmable beach in Los Cabos, at One&Only Palmilla.</p>
+                                                </div>
+                                                <div className='seaLink'>
+                                                    <a href='#'>explore</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Slider>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            {/* <div className='seaMain'>
                 <div className='seaAttachnment'>
                     <img src={seaAttachnmentfirst} alt='sea' />
                 </div>
@@ -89,10 +168,10 @@ export default function Sea() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
-            <div className='container5'>
+            {/* <div className='container5'>
                 <div className='adriaticMain'>
                     <div className='adriaticDisc'>
                         <div className='adriaticText'>
@@ -111,7 +190,7 @@ export default function Sea() {
                         <img src={adriaticImg} alt='img' />
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div >
     )
 }
