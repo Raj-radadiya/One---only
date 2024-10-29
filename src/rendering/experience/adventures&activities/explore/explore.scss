@@ -1,0 +1,147 @@
+@import '../../../../scss/main';
+
+.exploreMain {
+    .exploreSec {
+        display: flex;
+        align-items: center;
+        padding: 30px;
+
+        a {
+            margin-right: 10px;
+            text-transform: uppercase;
+            @include arial;
+            @include font12;
+            @include font600;
+            letter-spacing: 1px;
+            color: var(--dark-black-color);
+        }
+
+        .dubai {
+            opacity: 0.7;
+        }
+    }
+
+    .exploreDisc {
+        max-width: 720px;
+        margin: 60px auto;
+        text-align: center;
+
+        .exploreHead {
+            h2 {
+                @include h2;
+            }
+
+        }
+
+        .explorePara {
+            p {
+                @include p;
+            }
+        }
+    }
+
+    .exploreCard {
+        @include flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin: 170px 0 0;
+
+        .exploreLeft {
+            width: 720px;
+            padding: 30px 90px 0 60px;
+
+            .playHeading {
+                h2 {
+                    @include h2;
+                }
+            }
+
+            .playImg {
+                max-width: 570px;
+                height: 100%;
+
+                img {
+                    min-width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .exploreRight {
+            width: 360px;
+
+            .playImg2 {
+                height: 480px;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .cardDisc {
+                padding-top: 20px;
+
+                .exploreCardHead {
+                    h4 {
+                        @include h4;
+                    }
+                }
+
+                .exploreCardPara {
+                    p {
+                        @include p;
+                    }
+                }
+
+                .exploreBtn {
+                    button {
+                        @include btnHoverWhite;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
+@media (max-width:768px) {
+    .exploreMain {
+        padding: 0;
+
+        .exploreSec {
+            display: none;
+        }
+
+        .exploreDisc {
+            margin: 0 150px;
+            padding: 0;
+        }
+
+        .exploreCard {
+            margin: 100px 0 0;
+
+            .exploreLeft {
+                max-width: 500px;
+                padding: 30px 30px 0;
+
+                .playImg {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .exploreRight {
+                max-width: 230px;
+
+                .playImg2 {
+                    height: 310px;
+                }
+            }
+        }
+    }
+}

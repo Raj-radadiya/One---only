@@ -1,0 +1,210 @@
+@import '../../scss/main';
+
+.headerMain {
+    .headerBg {
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px 20px;
+        @include grid3;
+        border-bottom: 1px solid black;
+
+        .headerLeft {
+            display: flex;
+            cursor: pointer;
+            // text-align: center;
+            align-items: center;
+
+            .language {
+
+                select {
+                    border: none;
+                    width: 48%;
+                    @include anchorArial;
+                }
+
+                :hover {
+                    border-bottom: 1px solid black;
+                }
+            }
+
+            .call {
+                padding: 0 15px;
+            }
+
+            .mail {
+                padding: 0 15px;
+            }
+
+            .headerMenu {
+                a {
+                    @include anchorArial;
+                    padding: 0 15px;
+                }
+            }
+
+
+            .headerMenu {
+                :hover {
+                    border-bottom: 1px solid black;
+                }
+            }
+
+
+        }
+
+        .menuIcon {
+            display: none;
+        }
+
+        .headerCenter {
+            .headerLogo {
+                text-align: center;
+
+                img {
+                    width: 152px;
+                    height: 40px;
+                    align-items: center;
+
+                }
+            }
+        }
+
+        .headerRight {
+            text-align: end;
+
+            button {
+                @include btn;
+            }
+        }
+    }
+
+    .header-menu {
+        display: flex;
+        justify-content: center;
+        width: 1360px;
+        margin: 0 auto;
+
+        .menus {
+            @include flex;
+            align-items: center;
+
+            a {
+                @include anchorArial;
+                text-decoration: none;
+                padding: 14px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.navSection {
+    @include flex;
+    gap: 20px;
+    padding: 15px;
+    justify-content: center;
+
+    .navLink {
+
+        a {
+            @include anchor;
+            @include font14;
+            @include font500;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .headerMain {
+        .headerBg {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .headerLeft {
+                display: none;
+            }
+
+            .menuIcon {
+                display: block;
+
+                img {
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+
+            .headerCenter {
+                .headerLogo {
+                    text-align: center;
+
+
+                    img {
+                        align-items: center;
+                        height: 40px;
+                        width: 152px;
+                    }
+                }
+            }
+
+            .headerRight {
+                text-align: end;
+
+                button {
+                    @include btn;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .headerMain {
+        .headerBg {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+
+            .headerLeft {
+                display: none;
+            }
+
+            .menuIcon {
+                display: block;
+
+                img {
+                    height: 15px;
+                    width: 25px;
+                }
+            }
+
+            .headerCenter {
+                .headerLogo {
+                    text-align: center;
+
+                    img {
+                        align-items: center;
+                        height: 28px;
+                        width: 107px;
+                    }
+                }
+            }
+
+            .headerRight {
+                text-align: end;
+
+                button {
+                    @include btn;
+                    max-width: 130px;
+                    padding: 10px 12px;
+                }
+            }
+        }
+
+    }
+
+    .navSection {
+        display: none;
+    }
+}

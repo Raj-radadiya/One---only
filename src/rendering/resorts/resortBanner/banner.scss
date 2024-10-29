@@ -1,0 +1,83 @@
+@import '../../../scss/main';
+
+.resortHeroBanner {
+    position: relative;
+
+    .resortBannerImg {
+        height: 760px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+        }
+    }
+
+    .resortherobannertext {
+        position: absolute;
+        max-width: 640px;
+        padding: 98px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 2;
+
+
+        .resortHeading {
+            h1 {
+                @include h1;
+                color: var(--color-white);
+            }
+        }
+
+        .resortBannerPara {
+            p {
+                @include p;
+                color: var(--color-white);
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .resortHeroBanner {
+        .resortBannerImg {
+            height: 614px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .resortherobannertext {
+            position: relative;
+            padding: 50px;
+            max-width: 100%;
+            transform: none;
+
+            .resortHeading {
+                h1 {
+                    color: var(--dark-black-color);
+                }
+
+            }
+
+            .resortBannerPara {
+                p {
+                    color: var(--dark-black-color);
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .resortHeroBanner{
+        .resortBannerImg{
+            height: 460px;
+        }
+    }
+}

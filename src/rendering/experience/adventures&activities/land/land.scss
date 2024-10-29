@@ -1,0 +1,76 @@
+@import '../../../../scss/main';
+
+.landMain {
+    padding: 70px 0 50px;
+    text-align: center;
+
+    .landHead {
+        padding-bottom: 20px;
+
+        h2 {
+            @include h2;
+        }
+    }
+
+    .landSlider {
+        .land {
+            position: relative;
+
+            .landImg {
+                height: 533px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, .5);
+                    content: "";
+                    opacity: 0;
+                    transition: opacity 0.5s ease;
+                }
+            }
+
+            .landText {
+                position: absolute;
+                bottom: 0;
+                text-align: start;
+                padding: 0 30px 30px;
+                display: none;
+                opacity: 0;
+
+                .landPara {
+                    p {
+                        @include p;
+                        color: var(--color-white);
+                    }
+                }
+
+                .landLink {
+                    a {
+                        @include anchorArial;
+                        color: var(--color-white);
+                    }
+                }
+            }
+
+            &:hover .landText {
+                display: block;
+                opacity: 1;
+                transition: all 5s ease-in-out;
+            }
+
+            &:hover .landImg::before {
+                opacity: 1;
+                display: block;
+            }
+        }
+    }
+}

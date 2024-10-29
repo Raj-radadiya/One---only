@@ -1,0 +1,24 @@
+@mixin flex {
+    display: flex;
+}
+
+@mixin grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // gap: 20px;
+}
+
+@mixin grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@mixin grid4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@mixin grid5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}

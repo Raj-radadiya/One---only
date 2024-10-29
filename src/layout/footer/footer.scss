@@ -1,0 +1,83 @@
+@import '../../scss/main';
+
+.footer {
+    background-color: var(--dark-black-color);
+
+    .footerMain {
+        display: flex;
+        padding: 55px 0 18px;
+        border-bottom: 1px solid var(--bottom-border-color);
+
+        .footerLogo {
+            width: 230px;
+            margin-right: 35px;
+            align-items: start;
+
+            .FooterImg {
+                img {
+                    width: 150px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .linkFooter {
+            @include grid5;
+            .link1 {
+                width: 200px;
+
+                span {
+                    @include anchor;
+                    text-transform: uppercase;
+                    @include arial;
+                    color: var(--color-white);
+                }
+
+                ul {
+                    margin-top: 10px;
+
+                    li {
+                        padding-top: 16px;
+
+                        a {
+                            text-decoration: none;
+                            color: var(--color-white);
+                            @include font12;
+                            @include arial;
+                            letter-spacing: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .socialLink {
+        @include flex;
+        justify-content: space-between;
+        padding: 27px 0 24px;
+        align-items: center;
+
+        .socialMedia {
+            @include flex;
+            gap: 40px;
+
+            img {
+                width: 19px;
+                height: 19px;
+            }
+        }
+
+        .writes {
+            p {
+                color: var(--writes-color);
+                @include font600;
+                @include font11;
+                @include arial;
+                text-transform: uppercase;
+                letter-spacing: 2.5px;
+            }
+        }
+    }
+
+}

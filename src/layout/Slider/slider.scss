@@ -1,0 +1,120 @@
+@import '../../scss/main';
+
+.bannerMain {
+    overflow: hidden;
+
+    padding-bottom: 17px;
+
+    .bannerFirst {
+        position: relative;
+
+        .bannerImg {
+            img {
+                width: 100%;
+                height: 633px;
+                object-fit: cover;
+            }
+        }
+
+        .sliderText {
+            max-width: 650px;
+            padding: 98px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 22%;
+            left: 28vw;
+
+            h1 {
+                @include h1;
+                color: white;
+            }
+
+            p {
+                @include p;
+                color: var(--color-white);
+            }
+
+            .btn {
+                @include btn;
+                background-color: var(--dark-black-color);
+
+                &:hover {
+                    background-color: var(--btn-hover-light-gray-color);
+                    transition: 0.5s ease-in-out;
+                }
+            }
+
+            &::before {
+                background-color: rgba(212, 28, 28, 0.3);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.slick-dots {
+    bottom: 85px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: white;
+    font-size: 10px;
+}
+
+@media (max-width:768px) {
+    .space {
+        height: 30px !important;
+    }
+
+    .bannerMain {
+        padding: 0;
+
+        .bannerFirst {
+            .bannerImg {
+                img {
+                    height: 512px;
+                }
+            }
+
+            .sliderText {
+                position: relative;
+                top: 0;
+                left: 20px;
+                padding: 50px;
+                max-width: 100%;
+
+                h1 {
+                    color: var(--dark-black-color);
+                }
+
+                p {
+                    color: var(--dark-black-color);
+                }
+            }
+        }
+    }
+
+
+    .slick-dots {
+        top: 55%;
+    }
+
+}
+
+@media (max-width:576px) {
+    .bannerMain{
+        .bannerFirst{
+            .bannerImg{
+                img{
+                    width: 100%;
+                    height: 384px;
+                }
+            }
+            .sliderText{
+                padding: 37px;
+            }
+        }
+    }
+}

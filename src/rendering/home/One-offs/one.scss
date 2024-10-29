@@ -1,0 +1,246 @@
+@import '../../../scss/main';
+
+.space {
+    height: 45px;
+}
+
+.left_arrow {
+    position: absolute;
+    top: 25%;
+    left: -25px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--dark-black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: auto;
+    }
+}
+
+.right_arrow {
+    position: absolute;
+    top: 25%;
+    right: -10px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--dark-black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    img {
+        height: auto;
+    }
+}
+
+.oneOffMain {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    .offDetails {
+        max-width: 700px;
+        margin: 0 auto;
+
+        .oneHeading {
+            h2 {
+                @include font24;
+                @include times;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                @include font500;
+                padding-bottom: 18px;
+            }
+        }
+
+        .onePara {
+            p {
+                @include p;
+                color: var(--dark-black-color);
+            }
+        }
+
+        .oneButton {
+            button {
+                @include btnHoverWhite;
+                margin-bottom: 20px;
+            }
+
+            button:hover {
+                @include btn;
+            }
+        }
+    }
+
+    .offSliderMain {
+        margin-top: 40px;
+        display: flex;
+
+        .offSlider {
+
+            .offSliderImage {
+                height: 393px;
+                width: 393px;
+                margin-bottom: 20px;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    // margin-bottom: 20px;
+                }
+            }
+
+            .offCardDetails {
+                padding-right: 50px;
+                flex-basis: auto;
+                flex-grow: 1;
+                flex-shrink: 1;
+                display: inline-block;
+                padding-top: 0;
+                text-align: start;
+
+
+                h4 {
+                    @include h4;
+                }
+
+
+                p {
+                    @include p;
+                }
+
+                a {
+                    @include anchorArial;
+                }
+            }
+        }
+
+        .slider-container2 {
+            display: none;
+        }
+    }
+}
+
+
+.resortImg {
+    img {
+        width: 100%;
+        height: 621px;
+    }
+}
+
+@media (max-width:768px) {
+    .left_arrow {
+        display: none;
+    }
+
+    .right_arrow {
+        display: none;
+    }
+
+    .oneOffMain {
+        .offDetails {
+            max-width: 436px;
+        }
+    }
+
+    .offSliderMain {
+        max-width: 768px;
+
+        .slider-container {
+            max-width: 768px;
+
+            .offSlider {
+                .offSliderImage {
+                    width: 100%;
+                    height: 325px;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                .offCardDetails {
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+
+    .resortImg {
+        img {
+            height: 315px;
+            object-fit: cover;
+            padding: 0 60px;
+        }
+    }
+
+    .slick-slide {
+        padding: 0 8px;
+    }
+
+    .slick-list {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width:576px) {
+    .space {
+        height: 0;
+    }
+
+    .oneOffMain {
+        .offDetails {
+            .oneHeading {
+                h2 {
+                    @include font21;
+                }
+            }
+        }
+
+        .offSliderMain {
+            max-width: 576px;
+
+            .slider-container {
+                display: none;
+
+            }
+
+            .slider-container2 {
+                width: auto;
+
+                .offSlider {
+                    max-width: 374px;
+
+                    .offSliderImage {
+                        width: 374px;
+
+                        img {
+                            height: 374px;
+                            width: 100%;
+                        }
+                    }
+
+                    .offCardDetails {
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-active {
+        padding: 0;
+    }
+
+    .slick-list {
+        margin: 0;
+    }
+}

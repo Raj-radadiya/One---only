@@ -1,0 +1,135 @@
+@import '../../../scss/main';
+
+.resortMain {
+    margin: 100px 0 50px;
+    @include flex;
+    justify-content: space-around;
+
+    .resortCard {
+        width: 570px;
+
+        .resortExploreImg {
+            height: 380px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .resortText {
+            @include flex;
+            flex-direction: column;
+            padding: 20px 50px 0 20px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+
+            .resortHeading {
+                h4 {
+                    @include h4;
+                }
+            }
+
+            .resortPara {
+                p {
+                    @include p;
+                }
+            }
+
+            .resortLink {
+                a {
+                    @include anchorArial;
+                    padding: 5px 0;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+.exploreMain {
+    position: relative;
+    padding: 0 0 50px;
+
+    .exploreImg {
+        height: 550px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .exploreText {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-width: 620px;
+        padding: 80px 90px;
+
+        h4 {
+            @include h4;
+            @include font24;
+            color: var(--color-white);
+        }
+
+        p {
+            @include p;
+            color: var(--color-white);
+
+        }
+
+        button {
+            @include backTransparent;
+            color: var(--color-white);
+        }
+
+        button:hover {
+            @include btnHoverWhite;
+            border: 1px solid transparent;
+        }
+
+    }
+}
+
+
+@media (max-width:768px) {
+    .resortMain {
+        .resortCard {
+            width: 341px;
+
+            .resortExploreImg {
+                height: 227px;
+                object-fit: cover;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .resortText {
+                padding: 20px 30px 0 20px;
+            }
+        }
+    }
+
+    .exploreMain {
+        padding: 0 60px;
+
+        .exploreImg {
+           width: 100%;
+           height: 315px;
+           object-fit: cover;
+
+        }
+
+        .exploreText {
+            padding: 30px;
+            max-width: 320px;
+            left: 10%;
+        }
+    }
+}
