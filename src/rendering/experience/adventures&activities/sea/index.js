@@ -32,7 +32,6 @@ export default function Sea() {
                                 <div className='cardPara'>
                                     <p>Witness nature’s most incredible displays with the wind in your hair and the sun kissing your skin. From scenic seas to the open ocean, embrace life on the crystal waters with personalised private charters, whale watching, thrilling watersports and ultimate relaxation with our range of one-of-a-kind moments, available on the azure seas.</p>
                                 </div>
-
                             </div>
                         </div>
                         <div className='seaRight'>

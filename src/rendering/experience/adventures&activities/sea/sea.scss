@@ -1,11 +1,18 @@
 @import '../../../../scss/main';
 
 .seaMain {
+    position: relative;
+
     .seaAttachnment {
         background-attachment: scroll;
     }
 
     .seaCard {
+        background-color: var(--color-white);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 1320px;
         padding: 66px 60px 60px;
 
         .seaCardMain {
@@ -45,12 +52,28 @@
 
                 .seaSlider {
                     .seaSliderCard {
-                        .seaSliderImg {
-
-                        }
+                        padding: 0 15px;
 
                         .seaSliderDisc {
-                            
+                            padding: 15px 20px 0;
+
+                            .seaSliderHead {
+                                h4 {
+                                    @include h4;
+                                }
+                            }
+
+                            .seaSliderPara {
+                                p {
+                                    @include p;
+                                }
+                            }
+
+                            .seaLink {
+                                a {
+                                    @include anchorArial;
+                                }
+                            }
                         }
                     }
                 }
@@ -203,3 +226,43 @@
 //     }
 
 // }
+
+@media (max-width:768px) {
+    .seaMain {
+        .seaAttachnment {
+            display: none;
+        }
+
+        .seaCard {
+            max-width: 768px;
+            padding: 0;
+            position: relative;
+
+            .seaCardMain {
+            max-width: 768px;
+                margin: 0;
+                padding: 50px 0;
+                flex-direction: column;
+
+                .seaLeft {
+                    margin: 20px 15px 0;
+                    width: 100%;
+
+                    .seaCardText {
+                        padding: 30px 0;
+
+                        .cardHead {
+                            h2 {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .seaRight {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
