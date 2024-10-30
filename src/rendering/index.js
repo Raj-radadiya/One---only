@@ -6,8 +6,8 @@ import Experience from './experience'
 export default function Rendering() {
   return (
     <div>
-      {/* <Home /> */}
-      {/* <Resorts/> */}
+      <Home />
+      <Resorts/>
       <Experience />
     </div>
   )

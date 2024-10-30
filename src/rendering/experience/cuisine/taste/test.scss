@@ -1,0 +1,215 @@
+@import '../../../../scss/main';
+
+.tasteMain {
+    position: relative;
+
+    .testAttachnment {
+        background-attachment: scroll;
+    }
+
+
+
+    .tasteCardMain {
+        padding: 100px 50px 0 0;
+        @include flex;
+        justify-content: space-between;
+        max-width: 1320px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: var(--color-white);
+        @include flex;
+        justify-content: flex-end;
+
+        .tasteLeft {
+            width: 70%;
+
+        }
+
+        .tasteRight {
+            width: 30%;
+            @include flex;
+            margin-left: 60px;
+            text-align: center;
+            align-items: center;
+            width: 30%;
+
+            .tasteDisc {
+                padding: 20px;
+
+                .tasteCardHead {
+                    h2 {
+                        @include h2;
+                        text-decoration: underline;
+                        line-height: 35px;
+                    }
+                }
+
+                .tasteCardPara {
+                    p {
+                        @include p;
+                    }
+
+                    .para {
+                        padding-top: 20px;
+                    }
+                }
+
+                .tasteBtn {
+                    button {
+                        margin-top: 10px;
+                        @include btnHoverWhite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.signDineMain {
+    margin: 100px 0;
+
+    .dineDetails {
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 40px;
+
+        .dineHead {
+            h2 {
+                @include h2;
+            }
+        }
+
+        .dinePara {
+            p {
+                @include p;
+            }
+        }
+
+        .dineBtn {
+            margin-top: 20px;
+
+            button {
+                @include btnHoverWhite;
+            }
+        }
+    }
+
+    .tasteSlider {
+        padding: 0 5px;
+        .slider-container2{
+            display: none;
+        }
+        .tasteCard {
+            padding: 0 10px;
+
+            .tasteImg {
+                height: 315px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .tasteSliderDisc {
+                padding: 15px 20px 0;
+
+                .tasteSliderHead {
+                    h4 {
+                        @include h4;
+                    }
+                }
+
+                .tasteSliderPara {
+                    p {
+                        @include p;
+                    }
+                }
+
+                .tasteSliderLink {
+                    a {
+                        @include anchorArial;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .taste {
+        .tasteMain {
+            .testAttachnment {
+                display: none;
+            }
+
+            .tasteCardMain {
+                position: relative;
+                top: 0;
+                padding: 100px 30px 0;
+                gap: 30px;
+
+                .tasteLeft {
+                    width: 50%;
+                    min-height: 100%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .tasteRight {
+                    width: 50%;
+                    margin: 0;
+                }
+            }
+        }
+
+        .signDineMain {
+            .dineDetails {
+                max-width: 435px;
+                margin: 0 auto;
+            }
+
+            .tasteSlider {
+                overflow: hidden;
+                padding: 0;
+                margin-left: 15%;
+
+                .slider-container {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width:576px) {
+    .taste{
+        .tasteMain{
+            .tasteCardMain{
+                padding:30px 20px;
+                flex-direction: column;
+                .tasteLeft{
+                    width: 100%;
+                    img{
+                        height: 395px;
+                    }
+                }
+                .tasteRight{
+                    width: 100%;
+                }
+            }
+        }
+        .signDineMain{
+            margin: 25px 0;
+            .dineDetails{
+                min-width: 100%;
+                padding: 0 30px 40px;
+            }
+        }
+    }
+}

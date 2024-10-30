@@ -29,7 +29,7 @@ export default function Land() {
             <h2>Adventures on land</h2>
           </div>
           <div className='landSlider'>
-            {/* <div className="slider-container">
+            <div className="slider-container">
               <Slider {...settings}>
                 <div className='land'>
                   <div className='landImg'>
@@ -71,12 +71,7 @@ export default function Land() {
                   </div>
                 </div>
               </Slider>
-            </div> */}
-
-
-
-
-
+            </div>
 
             <div className="slider-container2">
               <Slider {...settings2}>

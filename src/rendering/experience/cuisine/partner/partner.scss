@@ -1,0 +1,269 @@
+@import '../../../../scss/main';
+
+.partnerRightArrow {
+    position: absolute;
+    top: 23%;
+    right: -5%;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--dark-black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: auto;
+    }
+}
+
+.partnerLeftArrow {
+    position: absolute;
+    top: 23%;
+    left: -5%;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--dark-black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: auto;
+    }
+}
+
+.partnerMain {
+    text-align: center;
+    margin: 100px 0 50px;
+
+    .partnerHead {
+        padding: 20px 0;
+        max-width: 500px;
+        margin: 0 auto;
+
+        h2 {
+            @include h2;
+        }
+    }
+
+    .partnerSlider {
+        .slider-container2 {
+            display: none;
+        }
+
+        .slider-container3 {
+            display: none;
+        }
+
+        .partnerCard {
+            padding: 0 10px;
+
+            .partnerImg {
+                height: 380px;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .partnerDetails {
+                text-align: start;
+                padding: 10px 10px 0 0;
+
+                .partnerName {
+                    padding-bottom: 20px;
+
+                    h4 {
+                        @include h4;
+                    }
+                }
+
+                .partnerExperience {
+                    p {
+                        @include p;
+                    }
+                }
+
+                .partnerLink {
+                    a {
+                        @include anchorArial;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.foodMain {
+    position: relative;
+    margin: 150px 0;
+
+    .foodDisc {
+        max-width: 720px;
+        height: 500px;
+        background-color: var(--card-bg-color);
+        @include flex;
+        align-items: center;
+
+        .foodText {
+            max-width: 450px;
+            padding: 60px 30px 60px 60px;
+
+            .foodHead {
+                max-width: 300px;
+
+                h2 {
+                    @include h2;
+                }
+            }
+
+            .foodPara {
+                p {
+                    @include p;
+                }
+            }
+
+            .foodBtn {
+                button {
+                    @include btnHoverWhite;
+                }
+            }
+        }
+    }
+
+    .foodImg {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 750px;
+        height: 500px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+}
+
+@media (max-width:768px) {
+    .partnerRightArrow {
+        display: none;
+    }
+
+    .partnerLeftArrow {
+        display: none;
+    }
+
+    .partnerMain {
+        margin: 70px 0 30px;
+
+        .partnerSlider {
+            overflow: hidden;
+            .slider-container {
+                display: none;
+            }
+
+            .slider-container2 {
+                display: block;
+            }
+
+            .slider-container3 {
+                display: none;
+            }
+
+            .partnerCard {
+                width: 100%;
+
+                .partnerImg {
+                    width: 100%;
+                    height: 444px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .foodMain {
+        padding: 40px 30px 20px;
+        margin: 100px 0;
+
+        .foodDisc {
+            max-width: 425px;
+            height: 100%;
+
+            .foodText {
+                max-width: 265px;
+                padding: 30px 15px 30px 30px;
+            }
+        }
+
+        .foodImg {
+            max-width: 440px;
+            left: 39%;
+            top: 15%;
+            max-height: 390px;
+
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .partnerMain {
+        .partnerSlider {
+            margin-left: 20%;
+            overflow: hidden;
+
+            .slider-container2 {
+                display: none;
+            }
+
+            .slider-container3 {
+                display: block;
+            }
+        }
+    }
+
+    .foodMain {
+        margin: 70px 0 0;
+        padding: 0;
+
+        .foodDisc {
+            min-width: 100%;
+            display: block;
+            height: auto;
+
+            .foodText {
+                min-width: 100%;
+                padding: 50px 30px;
+
+                .foodHead {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .foodImg {
+            position: relative;
+            left: 0;
+            min-width: 100%;
+            padding: 0 30px;
+
+            img {
+                min-width: 100%;
+                height: 335px;
+            }
+        }
+    }
+}
