@@ -1,37 +1,34 @@
-@import '../../../scss/main';
+@import '../../../../scss/main';
 
-.resortHeroBanner {
+.cuisineMain {
     position: relative;
 
-    .resortBannerImg {
-        height: 760px;
-
+    .cuidineImg {
         img {
-            height: 100%;
+            height: 633px;
             width: 100%;
             object-fit: cover;
-
         }
     }
 
-    .resortherobannertext {
+    .cuisineText {
         position: absolute;
-        max-width: 640px;
-        padding: 98px;
         top: 50%;
-        left: 0;
         transform: translateY(-50%);
-        z-index: 2;
+        left: 0;
+        max-width: 660px;
+        padding: 95px;
+        object-fit: cover;
 
-
-        .resortHeading {
+        .cuisineBannerHead {
             h1 {
+                max-width: 460px;
                 @include h1;
                 color: var(--color-white);
             }
         }
 
-        .resortBannerPara {
+        .cuisineBannerPara {
             p {
                 @include p;
                 color: var(--color-white);
@@ -41,45 +38,46 @@
 }
 
 @media (max-width:768px) {
-    .resortHeroBanner {
-        margin: 100px 0 0;
-
-        .resortBannerImg {
-            height: 614px;
+    .cuisineMain {
+        .cuidineImg {
+            height: 512px;
 
             img {
                 height: 100%;
-                width: 100%;
             }
         }
 
-        .resortherobannertext {
+        .cuisineText {
             position: relative;
-            padding: 50px;
-            max-width: 100%;
             transform: none;
+            padding: 50px;
+            min-width: 100%;
 
-            .resortHeading {
+            .cuisineBannerHead {
                 h1 {
+                    min-width: 100%;
                     color: var(--dark-black-color);
                 }
-
             }
 
-            .resortBannerPara {
+            .cuisineBannerPara {
                 p {
                     color: var(--dark-black-color);
                 }
-
             }
+
         }
     }
 }
 
 @media (max-width:576px) {
-    .resortHeroBanner {
-        .resortBannerImg {
-            height: 460px;
+    .cuisineMain {
+        .cuidineImg {
+            height: 385px;
+        }
+
+        .cuisineText {
+            padding: 40px;
         }
     }
 }
