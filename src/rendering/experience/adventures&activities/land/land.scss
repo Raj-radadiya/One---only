@@ -1,7 +1,7 @@
 @import '../../../../scss/main';
 
 .landMain {
-    padding: 70px 0 50px;
+    margin: 70px 0;
     text-align: center;
 
     .landHead {
@@ -13,6 +13,10 @@
     }
 
     .landSlider {
+        .slider-container2 {
+            display: none;
+        }
+
         .land {
             position: relative;
 
@@ -64,12 +68,95 @@
             &:hover .landText {
                 display: block;
                 opacity: 1;
-                transition: all 5s ease-in-out;
             }
 
             &:hover .landImg::before {
                 opacity: 1;
                 display: block;
+            }
+        }
+
+        .landBottom {
+            padding: 15px 20px 0;
+            text-align: start;
+
+            .landPara {
+                p {
+                    @include p;
+                }
+            }
+
+            .landLink {
+                a {
+                    @include anchorArial;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .landMain {
+        margin-left: 25%;
+
+        .landSlider {
+            .slider-container {
+                display: none;
+            }
+
+            .slider-container2 {
+                display: block;
+                overflow: hidden;
+
+                .land {
+                    .landImg::before {
+                        display: none;
+                    }
+
+                    .landText {
+                        .landPara {
+                            p {
+                                color: var(--dark-black-color);
+                            }
+
+                            .landLink {
+                                a {
+                                    color: var(--dark-black-color);
+                                }
+                            }
+
+                        }
+                    }
+
+                    &:hover .landText {
+                        display: none;
+                    }
+                }
+
+                .landBottom {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .landMain {
+        margin: 0;
+        padding: 200px 0 0;
+        margin-left: 25%;
+        text-align: start;
+
+        .landSlider {
+            .landBPara {
+                height: auto;
+
+                .land {
+                    .landImg {
+                        height: 500px;
+                    }
+                }
             }
         }
     }

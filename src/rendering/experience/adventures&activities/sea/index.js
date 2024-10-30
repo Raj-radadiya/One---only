@@ -15,10 +15,18 @@ export default function Sea() {
         slidesToScroll: 1,
         initialSlide: 0,
     }
+    var settings2 = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 1.2,
+        slidesToScroll: 1,
+        initialSlide: 0,
+    }
     return (
         <div>
 
-            <div className='seaMain'>
+            {/* <div className='seaMain'>
                 <div className='seaAttachnment'>
                     <img src={seaAttachnmentfirst} alt='img' />
                 </div>
@@ -92,10 +100,10 @@ export default function Sea() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
-            {/* <div className='seaMain'>
+            <div className='seaMain'>
                 <div className='seaAttachnment'>
                     <img src={seaAttachnmentfirst} alt='sea' />
                 </div>
@@ -164,13 +172,65 @@ export default function Sea() {
                                     </div>
                                 </Slider>
                             </div>
+                            <div className="slider-container2">
+                                <Slider {...settings2}>
+                                    <div className='seaSlider'>
+                                        <div className='seaCardImg'>
+                                            <img src={seaFirst} alt='sea' />
+                                        </div>
+                                        <div className='seaCardDisc'>
+                                            <div className='seaCardHead'>
+                                                <h4>The beauty of Baja</h4>
+                                            </div>
+                                            <div className='seaCardPara'>
+                                                <p>Head out for a sunrise surf, cruise the Baja coastline, experience whale watching excursions and dip in the only swimmable beach in Los Cabos, at One&Only Palmilla.</p>
+                                            </div>
+                                            <div className='seaCardLink'>
+                                                <a href='#'>explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='seaSlider'>
+                                        <div className='seaCardImg'>
+                                            <img src={seaSecond} alt='sea' />
+                                        </div>
+                                        <div className='seaCardDisc'>
+                                            <div className='seaCardHead'>
+                                                <h4>The beauty of Baja</h4>
+                                            </div>
+                                            <div className='seaCardPara'>
+                                                <p>Head out for a sunrise surf, cruise the Baja coastline, experience whale watching excursions and dip in the only swimmable beach in Los Cabos, at One&Only Palmilla.</p>
+                                            </div>
+                                            <div className='seaCardLink'>
+                                                <a href='#'>explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='seaSlider'>
+                                        <div className='seaCardImg'>
+                                            <img src={seaThird} alt='sea' />
+                                        </div>
+                                        <div className='seaCardDisc'>
+                                            <div className='seaCardHead'>
+                                                <h4>The beauty of Baja</h4>
+                                            </div>
+                                            <div className='seaCardPara'>
+                                                <p>Head out for a sunrise surf, cruise the Baja coastline, experience whale watching excursions and dip in the only swimmable beach in Los Cabos, at One&Only Palmilla.</p>
+                                            </div>
+                                            <div className='seaCardLink'>
+                                                <a href='#'>explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Slider>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
 
-            {/* <div className='container5'>
+            <div className='container5'>
                 <div className='adriaticMain'>
                     <div className='adriaticDisc'>
                         <div className='adriaticText'>
@@ -189,7 +249,7 @@ export default function Sea() {
                         <img src={adriaticImg} alt='img' />
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div >
     )
 }

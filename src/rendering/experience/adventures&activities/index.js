@@ -10,8 +10,8 @@ export default function Activity() {
       <ActivitiesHerobanner />
       <Explore />
       <Sea />
-      {/* <Land /> */}
-      {/* <Tradition/> */}
+      <Land />
+      <Tradition />
     </div>
   )
 }

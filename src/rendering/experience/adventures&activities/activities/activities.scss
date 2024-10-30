@@ -70,3 +70,14 @@
         }
     }
 }
+
+@media (max-width:576px) {
+    .activitiesMain{
+        .activitiesImg{
+            height: 385px;
+        }
+        .activitiesText{
+            padding: 40px;
+        }
+    }
+}

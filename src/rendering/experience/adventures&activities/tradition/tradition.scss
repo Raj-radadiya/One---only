@@ -122,9 +122,10 @@
 
 .arabianMain {
     position: relative;
-    
+
     .arabianImg {
         height: 740px;
+
         img {
             height: 100%;
             width: 100%;
@@ -160,6 +161,151 @@
         .arabianBtn {
             button {
                 @include btnHoverWhite;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .traditionMain {
+        padding: 150px 0 0;
+
+        .traditionAttachnment {
+            display: none;
+        }
+
+        .traditionCardMain {
+            position: relative;
+            @include grid2;
+            gap: 20px;
+            padding: 60px 30px 30px;
+
+            .traditionLeft {
+                width: 100%;
+                min-height: 100%;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .traditionRight {
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .wildCard {
+        margin: 100px 0 0;
+
+        .wildLeft {
+            padding: 30px 30px 0;
+
+            .playImg2 {
+                width: 440px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .wildRight {
+            max-width: 230px;
+
+            .wildImg1 {
+                height: 310px;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .arabianMain {
+        margin: 100px 0 0;
+
+        .arabianImg {
+            height: 500px;
+        }
+
+        .arabianText {
+            padding: 50px 80px;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .traditionMain {
+        padding: 0;
+
+        .traditionCardMain {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .wildCard {
+        @include flex;
+        flex-direction: column;
+        padding: 0 30px;
+
+        .wildLeft {
+            width: 100%;
+            padding: 0;
+
+            .playImg2 {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 700px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .wildRight {
+            min-width: 100%;
+
+            .wildImg1 {
+                display: none;
+            }
+        }
+    }
+
+
+    .arabianMain {
+        .arabianImg {
+            height: 380px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .arabianHead {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+            top: 0;
+
+            h2 {
+                color: var(--dark-black-color);
+            }
+        }
+
+        .arabianText {
+            position: relative;
+            padding: 0;
+
+            .arabianPara {
+                p {
+                    color: var(--dark-black-color);
+                }
             }
         }
     }

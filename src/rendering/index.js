@@ -8,7 +8,7 @@ export default function Rendering() {
     <div>
       {/* <Home /> */}
       {/* <Resorts/> */}
-      <Experience/>
+      <Experience />
     </div>
   )
 }
