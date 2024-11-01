@@ -1,0 +1,140 @@
+@import '../../../../scss/main';
+
+.villaMain {
+    text-align: center;
+    margin: 100px 0 100px;
+
+    .villaLocation {
+        max-width: 550px;
+        margin: 0 auto;
+
+        h2 {
+            @include h2;
+        }
+    }
+
+    .villaSliderMain {
+        margin-top: 40px;
+        display: flex;
+
+
+        .villaSlider {
+
+            .villaSliderImage {
+                height: 393px;
+                width: 393px;
+                margin-bottom: 20px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .villaCardDetails {
+                padding-right: 50px;
+                flex-basis: auto;
+                flex-grow: 1;
+                flex-shrink: 1;
+                display: inline-block;
+                padding-top: 0;
+                text-align: start;
+
+                .VillaDetails {
+                    margin-bottom: 15px;
+
+                    h4 {
+                        @include h4;
+                    }
+                }
+
+
+                p {
+                    @include p;
+                }
+
+                a {
+                    @include anchorArial;
+                }
+            }
+        }
+
+        .slider-container2 {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .villaMain {
+        margin: 90px 0 100px;
+
+        .villaSliderMain {
+            max-width: 768px;
+            margin-left: 28%;
+            overflow: hidden;
+
+            .slider-container {
+                max-width: 768px;
+                display: none;
+            }
+
+            .slider-container2 {
+                display: block;
+            }
+
+            .villaSlider {
+                padding: 0 10px;
+
+                .villaSliderImage {
+                    width: 100%;
+                    height: 325px;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                .villaCardDetails {
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .villaSliderMain {
+        margin: 0% !important;
+
+        .slider-container {
+            display: none;
+
+        }
+
+        .slider-container2 {
+            width: auto;
+
+            .villaSlider {
+                max-width: 374px;
+
+                .villaSliderImage {
+                    width: 374px;
+                    height: 100%;
+
+                    img {
+                        height: 374px;
+                        width: 100%;
+                    }
+                }
+
+                .villaCardDetails {
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}

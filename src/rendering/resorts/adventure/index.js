@@ -14,7 +14,7 @@ import right from '../../../assets/icon/icons8-right-20.png';
 function AdventureNextArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div
+    <div  
       className='AdventureLeftArrow'
       onClick={onClick}
     >

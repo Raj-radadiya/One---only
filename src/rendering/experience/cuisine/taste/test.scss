@@ -60,6 +60,10 @@
                         margin-top: 10px;
                         @include btnHoverWhite;
                     }
+
+                    :hover {
+                        @include headerBtn;
+                    }
                 }
             }
         }
@@ -93,14 +97,20 @@
             button {
                 @include btnHoverWhite;
             }
+
+            :hover {
+                @include headerBtn;
+            }
         }
     }
 
     .tasteSlider {
         padding: 0 5px;
-        .slider-container2{
+
+        .slider-container2 {
             display: none;
         }
+
         .tasteCard {
             padding: 0 10px;
 
@@ -149,7 +159,7 @@
             .tasteCardMain {
                 position: relative;
                 top: 0;
-                padding: 100px 30px 0;
+                padding: 60px 30px 0;
                 gap: 30px;
 
                 .tasteLeft {
@@ -183,32 +193,72 @@
                 .slider-container {
                     display: none;
                 }
+
+                .slider-container2 {
+                    display: block;
+                }
+
+                .tasteCard {
+                    .tasteImg {
+                        min-height: 370px;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
             }
         }
     }
 }
+
 @media (max-width:576px) {
-    .taste{
-        .tasteMain{
-            .tasteCardMain{
-                padding:30px 20px;
-                flex-direction: column;
-                .tasteLeft{
+    .taste {
+        .tasteMain {
+            .tasteCardMain {
+                padding: 30px 20px;
+                flex-direction: column-reverse;
+
+                .tasteLeft {
                     width: 100%;
-                    img{
+
+                    img {
                         height: 395px;
                     }
                 }
-                .tasteRight{
+
+                .tasteRight {
                     width: 100%;
                 }
             }
         }
-        .signDineMain{
+
+        .signDineMain {
             margin: 25px 0;
-            .dineDetails{
+
+            .dineDetails {
+                margin-bottom: 30px;
+                .dineHead {
+                    h2 {
+                        min-width: 100%;
+                    }
+                }
+
                 min-width: 100%;
-                padding: 0 30px 40px;
+                padding: 0 20px;
+            }
+
+            .tasteSlider {
+                .tasteCard {
+                    margin-bottom: 30px;
+                    .tasteImg {
+                        min-height: 280px;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
             }
         }
     }

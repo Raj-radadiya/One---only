@@ -1,0 +1,151 @@
+@import '../../../../scss/main';
+
+.partnerRightArrow {
+    position: absolute;
+    top: 35%;
+    right: -5%;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--dark-black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    img {
+        height: auto;
+    }
+}
+
+.partnerLeftArrow {
+    position: absolute;
+    top: 35%;
+    left: -5%;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--dark-black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: auto;
+    }
+}
+
+.villaCardMain {
+    text-align: center;
+    margin: 0px 0 50px;
+
+    .villaHead {
+        padding: 20px 0;
+        max-width: 500px;
+        margin: 0 auto;
+
+        h2 {
+            @include h2;
+        }
+    }
+
+    .villaSlider {
+        .slider-container2 {
+            display: none;
+        }
+
+        .slider-container3 {
+            display: none;
+        }
+
+        .villaCard {
+            padding: 0 10px;
+
+            .villaImg {
+                height: 380px;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .villaDetails {
+                text-align: start;
+                padding: 10px 10px 0 0;
+
+                .villaName {
+                    h4 {
+                        @include h4;
+                    }
+                }
+
+                .villaLink {
+                    a {
+                        @include anchorArial;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .partnerRightArrow {
+        display: none;
+    }
+
+    .partnerLeftArrow {
+        display: none;
+    }
+
+    .villaCardMain {
+        .villaSlider {
+            overflow: hidden;
+
+            .slider-container {
+                display: none;
+            }
+
+            .slider-container2 {
+                display: block;
+            }
+
+            .slider-container3 {
+                display: none;
+            }
+
+            .villaCard {
+                width: 100%;
+
+                .villaImg {
+                    width: 100%;
+                    height: 444px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .villaCardMain {
+        .villaSlider {
+            margin-left: 20%;
+            overflow: hidden;
+
+            .slider-container2 {
+                display: none;
+            }
+
+            .slider-container3 {
+                display: block;
+            }
+        }
+    }
+}

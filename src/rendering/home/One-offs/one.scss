@@ -62,7 +62,6 @@
         .onePara {
             p {
                 @include p;
-                color: var(--dark-black-color);
             }
         }
 
@@ -92,7 +91,6 @@
                 img {
                     height: 100%;
                     object-fit: cover;
-                    // margin-bottom: 20px;
                 }
             }
 
@@ -105,9 +103,11 @@
                 padding-top: 0;
                 text-align: start;
 
-
-                h4 {
-                    @include h4;
+                .details {
+                    margin-bottom: 35px;
+                    h4 {
+                        @include h4;
+                    }
                 }
 
 
@@ -193,11 +193,14 @@
 
 @media (max-width:576px) {
     .space {
-        height: 0;
+        display: none;
     }
 
     .oneOffMain {
         .offDetails {
+            margin: 0;
+            padding: 0 20px;
+            min-width: 100%;
             .oneHeading {
                 h2 {
                     @include font21;
@@ -233,6 +236,13 @@
                     }
                 }
             }
+        }
+    }
+    .resortImg{
+        img{
+            height: 345px;
+            width: 100%;
+            padding: 0 20px;
         }
     }
 

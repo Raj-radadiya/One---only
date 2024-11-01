@@ -63,11 +63,11 @@ export default function Tradition() {
 
 
             <div className='arabianMain'>
-                <div className='arabianImg'>
-                    <img src={arabian} alt='img' />
-                </div>
                 <div className='arabianHead'>
                     <h2>An Arabian adventure</h2>
+                </div>
+                <div className='arabianImg'>
+                    <img src={arabian} alt='img' />
                 </div>
                 <div className='arabianText'>
                     <div className='arabianPara'>

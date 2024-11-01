@@ -1,0 +1,84 @@
+@import '../../../../scss/main';
+
+.eventHerobannerMain {
+    position: relative;
+
+    .eventHerobannerImg {
+        img {
+            height: 633px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .eventHerobannerText {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        max-width: 660px;
+        padding: 95px;
+        object-fit: cover;
+
+        .eventBannerHead {
+            h1 {
+                max-width: 460px;
+                @include h1;
+                color: var(--color-white);
+            }
+        }
+
+        .eventBannerPara {
+            p {
+                @include p;
+                color: var(--color-white);
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .eventHerobannerMain {
+        .eventHerobannerImg {
+            height: 512px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .eventHerobannerText {
+            position: relative;
+            transform: none;
+            padding: 50px;
+            min-width: 100%;
+
+            .eventBannerHead {
+                h1 {
+                    min-width: 100%;
+                    color: var(--dark-black-color);
+                }
+            }
+
+            .eventBannerPara {
+                p {
+                    color: var(--dark-black-color);
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .eventHerobannerMain {
+        .eventHerobannerImg {
+            height: 385px;
+        }
+
+        .eventHerobannerText {
+            padding: 40px;
+        }
+    }
+}

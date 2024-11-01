@@ -1,0 +1,195 @@
+@import '../../../../scss/main';
+
+.familyActivityLeftArrow {
+    position: absolute;
+    top: 25%;
+    left: -15px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--dark-black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: auto;
+    }
+}
+
+.familyActivityRightArrow {
+    position: absolute;
+    top: 25%;
+    right: -15px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--dark-black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    img {
+        height: auto;
+    }
+}
+
+.familyActivitiesMain {
+    text-align: center;
+
+    .familyActivitiesTitle {
+        h2 {
+            @include h2;
+        }
+    }
+
+    .familyActivitiesSliderMain {
+        margin-top: 40px;
+
+        .slick-slide {
+            padding: 0 10px;
+        }
+
+        .slider-container2 {
+            display: none;
+        }
+
+        .slider-container3 {
+            display: none;
+        }
+
+        .familyActivitiesSlider {
+            .familyActivitiesSliderImage {
+                height: 312px;
+                margin-bottom: 20px;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .familyActivitiesCardDetails {
+                padding: 0 20px;
+                text-align: start;
+
+                .familyActivitiestitleCardhead {
+                    h4 {
+                        @include h4;
+                    }
+                }
+
+
+                p {
+                    @include p;
+                }
+
+                a {
+                    @include anchorArial;
+                }
+            }
+        }
+
+        .slider-container2 {
+            display: none;
+        }
+    }
+
+    .personalLake {
+        margin-top: 50px;
+        height: 740px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .familyActivityLeftArrow {
+        display: none;
+    }
+
+    .familyActivityRightArrow {
+        display: none;
+    }
+
+    .familyActivitiesMain {
+        .familyActivitiesSliderMain {
+            margin-left: 17%;
+
+            .slider-container {
+                display: none;
+            }
+
+            .slider-container2 {
+                display: block;
+            }
+
+            .familyActivitiesSlider {
+                .familyActivitiesSliderImage {
+                    width: 100%;
+                    height: 370px;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .personalLake {
+            height: 373px;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .familyActivitiesMain {
+        margin: 50px 0 0;
+
+        .familyActivitiesSliderMain {
+            max-width: 576px;
+
+            .slider-container {
+                display: none;
+
+            }
+
+            .slider-container2 {
+                display: none;
+            }
+
+            .slider-container3 {
+                display: block;
+            }
+
+            .familyActivitiesSlider {
+                max-width: 374px;
+
+                .familyActivitiesSliderImage {
+                    width: 374px;
+                    height: 280px;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+
+        .personalLake {
+            margin-top: 120px;
+        }
+    }
+}

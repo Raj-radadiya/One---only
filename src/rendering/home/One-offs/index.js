@@ -103,7 +103,9 @@ export default function OneOffs() {
                                         <img src={offImgThird} alt='img' />
                                     </div>
                                     <div className='offCardDetails'>
-                                        <h4>SECRETS OF AESTHESIS</h4>
+                                        <div className='details'>
+                                            <h4>SECRETS OF AESTHESIS</h4>
+                                        </div>
                                         <p>On the doorstep of Dubai’s financial, retail and culinary hubs, One&Only One Za’abeel is the place to be for foodies, business travellers, fashionistas, families and wellness seekers.</p>
                                         <a href='#'>explore</a>
                                     </div>

@@ -38,7 +38,7 @@
     margin-bottom: 18px;
     @include times;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
     @include font500;
 
     @media (max-width:576px) {
@@ -58,7 +58,7 @@
 
 @mixin p {
     @include font15;
-    color: var(--dark-black-color);
+    color: var(--light-dark-para-color);
     margin-bottom: 15px;
     letter-spacing: 1px;
     line-height: 25px;
@@ -72,6 +72,7 @@
 @mixin font12 {
     font-size: 12px;
 }
+
 @mixin font14 {
     font-size: 14px;
 }

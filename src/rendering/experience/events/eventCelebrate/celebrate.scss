@@ -1,0 +1,170 @@
+@import '../../../../scss/main';
+
+.celebrateMain {
+    .celebrateNavSec {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+
+        a {
+            margin-right: 10px;
+            text-transform: uppercase;
+            @include arial;
+            @include font12;
+            @include font600;
+            letter-spacing: 1px;
+            color: var(--dark-black-color);
+        }
+
+        .celebrate {
+            opacity: 0.7;
+        }
+    }
+
+    .celebrateMainDisc {
+        max-width: 720px;
+        margin: 60px auto;
+        text-align: center;
+
+        .celebrateMainHead {
+            h2 {
+                @include h2;
+            }
+
+        }
+
+        .celebrateMainPara {
+            p {
+                @include p;
+            }
+        }
+    }
+}
+
+.celebrateCard {
+    background-color: var(--card-bg-color);
+
+    .celebrateCard {
+        @include flex;
+        margin: 0 auto;
+        padding: 100px 0 120px;
+
+        .celebrateCardLeft {
+            width: 720px;
+            padding: 30px 90px 0 60px;
+
+            .celebrateCardHeading {
+                h2 {
+                    @include h2;
+                }
+            }
+
+            .monumentImg {
+                max-width: 570px;
+                height: 100%;
+
+                img {
+                    min-width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .celebrateCardRight {
+            max-width: 360px;
+
+            .dinnerImg {
+                height: 480px;
+
+                img {
+                    height: 480px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .celebrateCardDisc {
+                padding-top: 20px;
+
+                .celebrateCardPara {
+                    p {
+                        @include p;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .celebrateMain {
+        padding: 0;
+
+        .celebrateNavSec {
+            display: none;
+        }
+
+        .celebrateMainDisc {
+            margin: 0 150px;
+            padding: 0;
+        }
+
+        .celebrateCard {
+            // margin: 100px 0 0;
+
+            .celebrateCardLeft {
+                max-width: 500px;
+                padding: 30px 30px 0;
+
+                .monumentImg {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .celebrateCardRight {
+                max-width: 230px;
+
+                .dinnerImg {
+                    height: 310px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .celebrateMain {
+        .celebrateMainDisc {
+            width: 100%;
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        .celebrateCard {
+            margin: 90px 0 0;
+            @include flex;
+            flex-direction: column;
+            padding: 0 20px;
+
+            .celebrateCardLeft {
+                min-width: 100%;
+                padding: 0;
+            }
+
+            .celebrateCardRight {
+                max-width: 100%;
+
+                .dinnerImg {
+                    display: none;
+                }
+
+                .celebrateCardDisc {
+                    padding: 30px 0;
+                }
+            }
+        }
+    }
+}

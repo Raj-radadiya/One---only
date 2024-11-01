@@ -1,0 +1,251 @@
+@import '../../../../scss/main';
+
+.familyCooking {
+    padding: 100px 0;
+
+    .familyCookingMain {
+        position: relative;
+        height: 100%;
+
+        .familyCookingDisc {
+            max-width: 720px;
+            height: 500px;
+            background-color: var(--card-bg-color);
+            @include flex;
+            align-items: center;
+
+            .familyCookingText {
+                max-width: 450px;
+                padding: 60px 30px 60px 60px;
+
+                .familyCookingHead {
+                    h2 {
+                        @include h2;
+                    }
+                }
+
+                .familyCookingPara {
+                    p {
+                        @include p;
+                    }
+                }
+            }
+        }
+
+        .familyCookingImg {
+            position: absolute;
+            right: 0;
+            top: 50px;
+            width: 750px;
+            height: 100%;
+            // padding: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+}
+
+.familyVilla {
+    margin: 130px 0 100px;
+
+    .familyVillaMain {
+        position: relative;
+
+        .familyVillaImg {
+            width: 750px;
+            height: 500px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .familyVillaDisc {
+            position: absolute;
+            right: 0;
+            top: -50px;
+            width: 720px;
+            height: 500px;
+            background-color: var(--card-bg-color);
+            @include flex;
+            align-items: center;
+            z-index: -1;
+            justify-content: flex-end;
+
+            .familyVillaText {
+                max-width: 450px;
+                padding: 60px 30px 60px 60px;
+
+                .familyVillaHead {
+                    h2 {
+                        @include h2;
+                    }
+                }
+
+                .familyVillaPara {
+                    p {
+                        @include p;
+                    }
+                }
+
+                .familyVillaBtn {
+                    button {
+                        @include btnHoverWhite;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:768px) {
+    .familyCooking {
+        padding: 80px 0;
+
+        .familyCookingMain {
+            padding: 40px 30px 20px;
+
+            .familyCookingDisc {
+                max-width: 425px;
+                height: 100%;
+
+                .familyCookingText {
+                    max-width: 265px;
+                    padding: 30px 15px 30px 30px;
+
+                    .familyCookingHead {
+                        max-width: 180px;
+                    }
+                }
+            }
+
+            .familyCookingImg {
+                max-width: 440px;
+                left: 39%;
+                top: 20%;
+                max-height: 390px;
+
+            }
+        }
+    }
+
+    .familyVilla {
+        margin: 70px 0;
+        padding: 40px 30px 20px;
+
+        .familyVillaMain {
+
+            .familyVillaImg {
+                max-width: 440px;
+                left: 39%;
+                top: 15%;
+                max-height: 390px;
+
+            }
+
+            .familyVillaDisc {
+                max-width: 425px;
+
+                .familyVillaText {
+                    max-width: 265px;
+                    padding: 30px 15px 30px 30px;
+
+                    .familyVillaHead {
+                        max-width: 180px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .familyCooking {
+        margin: 0;
+        padding: 0;
+
+        .familyCookingMain {
+            margin: 70px 0 0;
+            padding: 20px 0 0;
+            @include flex;
+            flex-direction: column-reverse;
+
+            .familyCookingDisc {
+                min-width: 100%;
+                display: block;
+                height: auto;
+                text-align: center;
+
+                .familyCookingText {
+                    min-width: 100%;
+                    padding: 50px 30px;
+
+                    .familyCookingHead {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .familyCookingImg {
+                position: relative;
+                left: 0;
+                min-width: 100%;
+                padding: 0 30px;
+
+                img {
+                    min-width: 100%;
+                    height: 335px;
+                }
+            }
+        }
+    }
+
+    .familyVilla {
+        margin: 0;
+        padding: 0;
+
+        .familyVillaMain {
+            margin: 50px 0 0;
+            padding: 0;
+
+            .familyVillaImg {
+                min-width: 100%;
+                padding: 0 30px;
+
+                img {
+                    min-width: 100%;
+                    height: 335px;
+                }
+            }
+
+            .familyVillaDisc {
+                position: relative;
+                left: 0;
+                min-width: 100%;
+                display: block;
+                height: auto;
+                text-align: center;
+
+                .familyVillaText {
+                    min-width: 100%;
+                    padding: 50px 30px;
+                     .familyVillaHead {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+
+        }
+    }
+}

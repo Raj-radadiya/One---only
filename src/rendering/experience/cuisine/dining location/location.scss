@@ -39,6 +39,9 @@
                 button {
                     @include btnHoverWhite;
                 }
+                :hover{
+                    @include headerBtn;
+                }
             }
         }
     }

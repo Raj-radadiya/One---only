@@ -99,6 +99,11 @@
     .landMain {
         margin-left: 25%;
 
+        .landHead {
+            padding: 0 0 20px;
+            text-align: start;
+        }
+
         .landSlider {
             .slider-container {
                 display: none;
@@ -144,8 +149,8 @@
 @media (max-width:576px) {
     .landMain {
         margin: 0;
-        padding: 200px 0 0;
-        margin-left: 25%;
+        padding: 0;
+        margin-left: 17%;
         text-align: start;
 
         .landSlider {

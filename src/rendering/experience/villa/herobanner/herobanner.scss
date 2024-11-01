@@ -1,0 +1,83 @@
+@import '../../../../scss/main';
+
+.villaHeroMain {
+    position: relative;
+
+    .villaImg {
+        img {
+            height: 633px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .villaText {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        max-width: 660px;
+        padding: 95px;
+        object-fit: cover;
+
+        .villaBannerHead {
+            h1 {
+                max-width: 460px;
+                @include h1;
+                color: var(--color-white);
+            }
+        }
+
+        .villaBannerPara {
+            p {
+                @include p;
+                color: var(--color-white);
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .villaHeroMain {
+        .villaImg {
+            height: 512px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .villaText {
+            position: relative;
+            transform: none;
+            padding: 50px;
+            min-width: 100%;
+
+            .villaBannerHead {
+                h1 {
+                    min-width: 100%;
+                    color: var(--dark-black-color);
+                }
+            }
+
+            .villaBannerPara {
+                p {
+                    color: var(--dark-black-color);
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .villaHeroMain {
+        .villaImg {
+            height: 385px;
+        }
+
+        .villaText {
+            padding: 40px;
+        }
+    }
+}

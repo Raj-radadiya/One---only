@@ -1,0 +1,84 @@
+@import '../../../../scss/main';
+
+.familyHerobannerMain {
+    position: relative;
+
+    .familyHerobannerImg {
+        img {
+            height: 633px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .familyHerobannerText {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        max-width: 660px;
+        padding: 95px;
+        object-fit: cover;
+
+        .familyBannerHead {
+            h1 {
+                max-width: 460px;
+                @include h1;
+                color: var(--color-white);
+            }
+        }
+
+        .familyBannerPara {
+            p {
+                @include p;
+                color: var(--color-white);
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .familyHerobannerMain {
+        .familyHerobannerImg {
+            height: 512px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .familyHerobannerText {
+            position: relative;
+            transform: none;
+            padding: 50px;
+            min-width: 100%;
+
+            .familyBannerHead {
+                h1 {
+                    min-width: 100%;
+                    color: var(--dark-black-color);
+                }
+            }
+
+            .familyBannerPara {
+                p {
+                    color: var(--dark-black-color);
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .familyHerobannerMain {
+        .familyHerobannerImg {
+            height: 385px;
+        }
+
+        .familyHerobannerText {
+            padding: 40px;
+        }
+    }
+}

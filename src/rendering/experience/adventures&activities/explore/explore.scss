@@ -44,6 +44,7 @@
         @include flex;
         max-width: 1200px;
         margin: 0 auto;
+        padding: 100px 0 120px;
 
         .exploreLeft {
             width: 720px;
@@ -67,7 +68,7 @@
         }
 
         .exploreRight {
-           max-width: 360px;
+            max-width: 360px;
 
             .playImg2 {
                 height: 480px;
@@ -97,6 +98,9 @@
                     button {
                         @include btnHoverWhite;
                     }
+                    :hover{
+                        @include headerBtn;
+                    }
                 }
             }
         }
@@ -117,7 +121,7 @@
         }
 
         .exploreCard {
-            margin: 100px 0 0;
+            // margin: 100px 0 0;
 
             .exploreLeft {
                 max-width: 500px;
@@ -160,12 +164,15 @@
                 min-width: 100%;
                 padding: 0;
             }
-            .exploreRight{
+
+            .exploreRight {
                 max-width: 100%;
-                .playImg2{
+
+                .playImg2 {
                     display: none;
                 }
-                .cardDisc{
+
+                .cardDisc {
                     padding: 30px 0;
                 }
             }
